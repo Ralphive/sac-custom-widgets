@@ -32,7 +32,7 @@ var getScriptPromisify = (src) => {
       this.render()
     }
 
-    async render(value) {
+    async render() {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root, 'dark')
@@ -103,7 +103,7 @@ var getScriptPromisify = (src) => {
                     color: 'auto'
                 },
                 data: [{
-                    value: value
+                    value: 20
                 }]
             },
     
@@ -141,7 +141,7 @@ var getScriptPromisify = (src) => {
                     show: false
                 },
                 data: [{
-                    value: value,
+                    value: 20,
                 }]
     
             }
