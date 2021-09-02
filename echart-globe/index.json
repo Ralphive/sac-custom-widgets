@@ -1,0 +1,33 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.globe",
+  "version": "1.0.0",
+  "name": "ECharts globe",
+  "newInstancePrefix": "EChartGlobe",
+  "description": "A sample custom widget wrapped EChart globe",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-globe",
+      "url": "https://www.ralphive.com/sac-custom-widgets/echart-globe/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+        "width": {
+            "type": "integer",
+            "default": 600
+        },
+        "height": {
+            "type": "integer",
+            "default": 420
+        }
+  },
+  "methods": {
+  },
+  "events": {
+  }
+}
