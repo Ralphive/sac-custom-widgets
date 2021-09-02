@@ -10,7 +10,7 @@
     "webcomponents": [
       {
         "kind": "main",
-        "tag": "com-sap-sample-echarts-prepared",
+        "tag": "com-sap-sample-echarts-gauge",
         "url": "https://www.ralphive.com/sac-custom-widgets/echart-gauge/main.js",
         "integrity": "",
         "ignoreIntegrity": true
