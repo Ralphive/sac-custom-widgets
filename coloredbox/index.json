@@ -40,7 +40,7 @@
 		"opacity": {
 			"type": "number",
 			"description": "Opacity",
-			"default": "1"
+			"default": 1
 		},
 		"width": {
 			"type": "integer",
@@ -75,5 +75,3 @@
 		}
 	}
 }
-
- https://ralphive.com/SAPCustomWidget/box/box.js
