@@ -32,6 +32,13 @@ var getScriptPromisify = (src) => {
       this.render()
     }
 
+    onCustomWidgetAfterUpdate(changedProperties) {
+        if ("value" in changedProperties) {
+            option.series[1].data[0].value = changedProperties["value"];
+            chart.setOption(option, true);
+        }
+     }
+
     async render() {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 

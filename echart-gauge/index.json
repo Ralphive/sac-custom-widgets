@@ -24,7 +24,11 @@
         "height": {
             "type": "integer",
             "default": 420
-        }
+        },
+        "value": {
+          "type": "integer",
+          "default": 20
+      }
   },
   "methods": {
     "setValue": {
@@ -32,11 +36,11 @@
       "parameters": [
         {
           "name": "num",
-          "type": "number",
+          "type": "integer",
           "description": "The new value"
         }
       ],
-      "body": "this.option.series[0].data[0].value = num; this.chart.setOption(option, true);"
+      "body": "this.value = num;"
     }
   },
   "events": {
