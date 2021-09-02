@@ -37,7 +37,7 @@ var getScriptPromisify = (src) => {
 
       const chart = echarts.init(this._root, 'dark')
 
-      option = {
+      const option = {
         backgroundColor: '#000',
         tooltip: {
           formatter: '{a} <br/>{b} : {c}%'
