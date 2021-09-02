@@ -1,0 +1,34 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.sample.echarts.gauge",
+    "version": "1.0.0",
+    "name": "ECharts Gauge",
+    "newInstancePrefix": "EChartPrepared",
+    "description": "A sample custom widget wrapped EChart gauge",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-echarts-prepared",
+        "url": "https://www.ralphive.com/sac-custom-widgets/echart-gauge/main.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+          "width": {
+              "type": "integer",
+              "default": 600
+          },
+          "height": {
+              "type": "integer",
+              "default": 420
+          }
+    },
+    "methods": {
+    },
+    "events": {
+    }
+  }
+  
