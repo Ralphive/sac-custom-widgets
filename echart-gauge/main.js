@@ -34,12 +34,11 @@ var getScriptPromisify = (src) => {
 
     onCustomWidgetAfterUpdate(changedProperties) {
         if ("value" in changedProperties) {
-            option.series[1].data[0].value = changedProperties["value"];
-            chart.setOption(option, true);
+            this.render(changedProperties["value"])
         }
      }
 
-    async render() {
+    async render(value) {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root, 'dark')
@@ -110,7 +109,7 @@ var getScriptPromisify = (src) => {
                     color: 'auto'
                 },
                 data: [{
-                    value: 20
+                    value: value?value:20
                 }]
             },
     
@@ -148,7 +147,7 @@ var getScriptPromisify = (src) => {
                     show: false
                 },
                 data: [{
-                    value: 20,
+                    value: value?value:20
                 }]
     
             }
