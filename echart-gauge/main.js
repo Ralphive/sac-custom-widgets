@@ -105,51 +105,12 @@ var getScriptPromisify = (src) => {
                     offsetCenter: [0, '-15%'],
                     fontSize: 60,
                     fontWeight: 'bolder',
-                    formatter: '{value} °C',
+                    formatter: '$ {value}',
                     color: 'auto'
                 },
                 data: [{
                     value: value?value:20
                 }]
-            },
-    
-            {
-                type: 'gauge',
-                center: ["50%", "60%"],
-                startAngle: 200,
-                endAngle: -20,
-                min: 0,
-                max: 60,
-                itemStyle: {
-                    color: '#FD7347',
-                },
-                progress: {
-                    show: true,
-                    width: 8
-                },
-    
-                pointer: {
-                    show: false
-                },
-                axisLine: {
-                    show: false
-                },
-                axisTick: {
-                    show: false
-                },
-                splitLine: {
-                    show: false
-                },
-                axisLabel: {
-                    show: false
-                },
-                detail: {
-                    show: false
-                },
-                data: [{
-                    value: value?value:20
-                }]
-    
             }
         ],
     };
