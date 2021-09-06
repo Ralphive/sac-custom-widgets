@@ -32,18 +32,10 @@ var getScriptPromisify = (src) => {
       this.render()
     }
 
-    onCustomWidgetAfterUpdate(changedProperties) {
-        if ("value" in changedProperties) {
-            this.render(changedProperties["value"])
-        }
-     }
-
     async render(value) {
       await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
 
       const chart = echarts.init(this._root, 'dark')
-      var data = [];
-
       const option = {
         series: [{
                 type: 'gauge',
@@ -109,7 +101,7 @@ var getScriptPromisify = (src) => {
                     color: 'auto'
                 },
                 data: [{
-                    value: value?value:20
+                    value: value?value:0
                 }]
             }
         ],

@@ -3,7 +3,7 @@
   "vendor": "SAP",
   "license": "",
   "id": "com.sap.sac.sample.echarts.gauge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "ECharts Gauge",
   "newInstancePrefix": "EChartPrepared",
   "description": "A sample custom widget wrapped EChart gauge",
@@ -31,16 +31,15 @@
       }
   },
   "methods": {
-    "setValue": {
-      "description": "Set Gauge num",
+    "render": {
+      "description": "Set Gauge value",
       "parameters": [
         {
-          "name": "num",
-          "type": "integer",
+          "name": "value",
+          "type": "number",
           "description": "The new value"
         }
-      ],
-      "body": "this.value = num;"
+      ]
     }
   },
   "events": {
